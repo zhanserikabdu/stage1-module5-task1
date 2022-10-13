@@ -86,7 +86,7 @@ public class InterfaceCreatorTest {
         );
     }
 
-    public static Stream<Arguments> bifunctionTestCases() {
+    public static Stream<Arguments> biFunctionTestCases() {
         return Stream.of(
                 Arguments.of("ListWithShortArrays",
                         new ArrayList<>(Arrays. asList(48, 56)),
@@ -132,8 +132,8 @@ public class InterfaceCreatorTest {
         assertEquals(result, expected);
     }
 
-    @ParameterizedTest(name = "bifunction_{0}_Test")
-    @MethodSource(value = "bifunctionTestCases")
+    @ParameterizedTest(name = "biFunction_{0}_Test")
+    @MethodSource(value = "biFunctionTestCases")
     void stringSizeTest(String name,
                           List<Integer> sourceList1,
                           List<Integer> sourceList2,
